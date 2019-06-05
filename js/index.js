@@ -17,13 +17,23 @@ function searchScroll() {
     var bannerHeight = document.querySelector(".jd_banner").offsetHeight;
     /*浏览器滚动事件*/
     window.onscroll = function () {
+        /*获取页面向上滚动距离的兼容代码*/
+        function getScroll() {
+            return {
+                top: Window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+
+            };
+        }
+
+        var top = getScroll();
         /*获取页面向上滚动的距离*/
-        var scrollTop=document.documentElement.scrollTop;
+        var scrollTop=top.top;
         /*当页面向上滚动的距离小于banner的高度时，搜索框的背景透明度随着滚动距离的增加而增加
         当页面向上滚动的距离大于等于banner的高度时，搜索框的背景透明度为定值0.85*/
         opacity=scrollTop < bannerHeight?scrollTop/bannerHeight*0.85:0.85;
         searchBox.style.background="rgba(201,21,35,"+opacity+")";
-        searchBox.style.webkitBackground="rgba(201,21,35,"+opacity+")";
+
+
     };
 }
 /*自定义轮播图切换功能实现函数*/
