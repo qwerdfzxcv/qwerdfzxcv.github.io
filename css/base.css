@@ -37,4 +37,10 @@ body {
     font-size: 14px;
 
 }
-
+/*精灵图的公共样式*/
+[class^="icon_"],[class*=" icon_"]{
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    -webkit-background-size:200px 200px ;
+    background-size:200px 200px ;
+}

@@ -1,0 +1,127 @@
+html,body{
+    height: 100%;}
+/*全屏容器*/
+.jd_cateContainer{
+    width: 100%;
+    height: 100%;
+    /*background: pink;*/
+    background: #fff;
+}
+/*分类顶部*/
+.jd_cateTop {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    border-bottom: 1px solid #cccccc;
+    background:url("../images/header-bg.png") 0 0 /1px 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+}
+.jd_cateTop form input{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    background: #fff;
+    border-radius: 6px;
+    border:1px solid #dedede;
+    margin: 5px 0;
+}
+.icon_back,.icon_menu{
+    width: 40px;
+    height: 40px;
+    padding:10px;
+    background-origin: content-box;
+    background-clip: content-box;
+    position: absolute;
+    top:0;
+}
+.icon_back{
+    left:0;
+     background-position: -20px 0;}
+.icon_menu{
+    right:0;
+    background-position: -60px 0;
+}
+/*京东分类主体部分*/
+.jd_cateMain{
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
+.cateMain_left{
+    width: 90px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    /*background: red;*/
+}
+.navBar{
+    width: 100%;
+    /*height: 100%;*/
+    /*overflow: hidden;*/
+}
+.navBar li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    cursor: pointer;
+    background: #f8f8f8;
+}
+.navBar .now{
+    color: #d8505c;
+    border-right: none;
+    background: #fff;
+}
+.cateMain_right{
+    height: 100%;
+    overflow: hidden;
+}
+.cateMain_right_banner{
+    width: 100%;
+    padding: 10px;
+
+}
+/*.cateMain_right_banner a{*/
+    /*width: 100%;*/
+
+/*}*/
+.cateMain_right_banner a img{
+    width: 100%;
+    display: block;
+}
+.hot{
+    width: 100%;
+
+}
+.hot h3{
+    padding-left: 10px;
+}
+.hot ul{
+    width: 100%;
+
+    }
+.hot ul li{
+    width: 33.33%;
+    float: left;
+    padding-top: 5px;
+}
+.hot li a{
+    width: 80%;
+    display: block;
+
+}
+.hot li img{
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+}
+.hot li p{
+    text-align: center;
+}

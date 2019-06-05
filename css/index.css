@@ -27,12 +27,7 @@
     background:rgba(201,21,35,0);
     padding: 0 40px 0 70px;
 }
-[class^="icon_"],[class*=" icon_"]{
-    background-image: url("../images/sprites.png");
-    background-repeat: no-repeat;
-    -webkit-background-size:200px 200px ;
-    background-size:200px 200px ;
-}
+
 .jd_topbox .icon_logo{
     width: 60px;
     height: 30px;
@@ -47,12 +42,14 @@
     /*background-color: yellow;*/
 }
 .jd_topbox form input {
+
     width: 100%;
     height: 30px;
     line-height: 30px;
     margin-top: 5px;
     border-radius: 16px;
     padding-left: 50px;
+    padding-top:3px;
 }
 .jd_topbox form .icon_search{
     position: absolute;
