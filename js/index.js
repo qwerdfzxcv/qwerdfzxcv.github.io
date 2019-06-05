@@ -23,6 +23,7 @@ function searchScroll() {
         当页面向上滚动的距离大于等于banner的高度时，搜索框的背景透明度为定值0.85*/
         opacity=scrollTop < bannerHeight?scrollTop/bannerHeight*0.85:0.85;
         searchBox.style.background="rgba(201,21,35,"+opacity+")";
+        searchBox.style.webkitBackground="rgba(201,21,35,"+opacity+")";
     };
 }
 /*自定义轮播图切换功能实现函数*/
@@ -39,8 +40,8 @@ function bannerToggle() {
     }
     /*自定义为图片容器添加过渡函数*/
     function addTransition() {
-        imageBox.style.transition = "all 0.5s";
-        imageBox.style.webkittransition = "all 0.5s";
+        imageBox.style.transition = "all 0.2s";
+        imageBox.style.webkittransition = "all 0.2s";
     }
     /*自定义移除图片容器过渡函数*/
     function removeTransition() {
