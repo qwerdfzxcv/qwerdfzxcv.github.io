@@ -4,5 +4,6 @@ window.onload = function () {
    new IScroll(document.querySelector(".cateMain_left"),{
        scrollX:false,
        scrollY:true
-   })
+   });
+    window.PointerEvent = undefined;
 };
