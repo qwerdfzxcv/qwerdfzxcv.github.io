@@ -5,5 +5,7 @@ window.onload = function () {
        scrollX:false,
        scrollY:true
    });
-    window.PointerEvent = undefined;
+    document.querySelector(".navBar").addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
 };
